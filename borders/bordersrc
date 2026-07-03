@@ -1,0 +1,17 @@
+#!/bin/bash
+# JankyBorders — midnight blue.
+# Active border matches the bar's accent ($BLUE) and the focused-workspace pill;
+# inactive recedes into the midnight palette so only the focused window pops.
+
+source "$HOME/.config/sketchybar/colors.sh"
+
+options=(
+    style=round
+    width=3.0
+    hidpi=on
+    active_color=$BLUE
+    inactive_color=$BG2
+    background_color=$TRANSPARENT
+)
+
+borders "${options[@]}"
