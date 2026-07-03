@@ -1,12 +1,19 @@
-# dotfiles
+# 🌑 medianoche
 
-Midnight-blue macOS rice: [AeroSpace](https://github.com/nikitabobko/AeroSpace) +
-[sketchybar](https://github.com/FelixKratz/SketchyBar) +
-[JankyBorders](https://github.com/FelixKratz/JankyBorders) +
-[ghostty](https://ghostty.org) + [Rectangle](https://rectangleapp.com).
+> *medianoche* — Spanish for **midnight**. A midnight-blue rice for macOS,
+> built on (and named after) a MacBook Air *Midnight*.
 
-The palette's source of truth is [`sketchybar/colors.sh`](sketchybar/colors.sh);
-the other configs reuse the same hex values.
+The whole desktop answers to one file. [`sketchybar/colors.sh`](sketchybar/colors.sh)
+defines the palette — near-black `#0f1322`, deep navy `#141929`, moonlit text
+`#c8d3e6`, one electric-blue accent `#4d85ff` — and every component drinks from
+it: [AeroSpace](https://github.com/nikitabobko/AeroSpace) tiles the windows,
+[sketchybar](https://github.com/FelixKratz/SketchyBar) floats in the notch strip
+with per-workspace pills, [JankyBorders](https://github.com/FelixKratz/JankyBorders)
+traces the focused window in blue, and [Ghostty](https://ghostty.org) renders the
+terminal in the same hues. [Rectangle](https://rectangleapp.com) handles window
+snapping — including the one weird trick the notch demands (see below).
+
+Change a hex in `colors.sh` and the desktop follows. Everything else is detail.
 
 ## Layout
 
